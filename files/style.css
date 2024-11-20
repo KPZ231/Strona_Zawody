@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "Istok Web", sans-serif;
+    background-color: #326487;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+.baner{
+    h1{
+        text-align: center;
+        text-shadow: 1px 1px 4px black;
+        font-size: 64px;
+    }
+}
+
+.tables{
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.element{
+    display: inline-block;
+    margin-left: 250px;
+    margin-right: 250px;
+
+    text-shadow: 1px 1px 4px black;
+}
+
+.blurBox {
+    width: 80%;
+    height: 500px;
+    background-color: rgba(45, 114, 162, 0.7); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(90px); 
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+footer{
+    background-color: #4563A8;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    clear: both;
+    height: 129px;
+
+    p{
+        text-align: center;
+        color: white;
+    }
+}
+.container {
+    height: 5vh;
+    background-color: #DED6D6;
+    margin-bottom: 17px;
+    color: black;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+
+    border-radius: 10px;
+}
+
+main{
+    width: 70%;
+    clear: both;
+    margin: auto;
+}
+
+table.bracket {
+    border-collapse: collapse;
+    border: none;
+}
+
+.bracket td {
+    vertical-align: middle;
+    width: 120px;
+    padding: 0px 20px 0px 0px;
+}
+
+
+.bracket th{
+    text-align:center;
+}
