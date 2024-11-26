@@ -1,6 +1,13 @@
 <!DOCTYPE html>
+
+<!-- Importowanie Czcionek -->
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans+Narrow&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+</style>
+
 <html lang="pl">
   <head>
+    <!-- Metadane strony -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -9,75 +16,119 @@
     />
     <meta name="author" content="KPZsProductions" />
 
-    <link rel="import" href="link.html" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./scss/table.css">
 
-    <link rel="stylesheet" href="style.css" />
     <title>Zawody Sportowe - ZSCL</title>
   </head>
-  <body>
 
-    <footer>
-        <br />
-        <br />
-        <br />
-        <p>TEKST STOPKI</p>
-      </footer>
-      
+  <body>
+    <!-- Baner Z Nagłowkiem -->
     <div class="baner">
       <h1>NAZWA SZKOŁY: TYP SZKOŁY</h1>
     </div>
 
+    <!-- Breaki zeby dodac troche miejsca nie chce mi sie bawic w CSSa ;> -->
     <br />
     <br />
     <br />
 
-    <div class="tables">
-      <h3 class="element">WYGRANI</h3>
-      <h3 class="element">PRZEGRANI</h3>
-    </div>
+    <!--Tabela Wygranych-->
+    <h2 style="text-align: center">Tabela Wygranych</h2>
 
-    <div class="blurBox"></div>
-
-    <main>
-      <div class="tableHolder">
-        <div class="wygrani">
-            <table summary="Tournament Bracket" class="bracket">
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                    <td rowspan="2"><div class="container">KLASA</div></td>
-                    <td rowspan="4"><div class="container">KLASA</div></td>
-                    
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                    <td rowspan="2"><div class="container">KLASA</div></td>
-                    <td rowspan="4"><div class="container">KLASA</div></td>
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                    <td rowspan="2"><div class="container">KLASA</div></td>
-                    <td rowspan="4"><div class="container">KLASA</div></td>
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                    <td rowspan="2"><div class="container">KLASA</div></td>
-                    
-                </tr>
-                <tr>
-                    <td><div class="container">KLASA</div></td>
-                </tr>
-                
-        <div class="przegrani"></div>
+    <!-- Rozpoczecie -->
+    <div class="tournament-container">
+      <div class="tournament-headers">
+        <h3>1/8 Rozgrywek</h3>
+        <h3>Ćwierćfinał</h3>
+        <h3>Półfinał</h3>
+        <h3>Final</h3>
+        <h3>Zwycięsca</h3>
       </div>
-    </main>
+
+      <div class="tournament-brackets">
+        <ul class="bracket bracket-1">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-2">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-3">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-4">
+          <li class="team-item">Klasa</li>
+        </ul>
+
+        <ul class="bracket bracket-5">
+          <li class="team-item">Klasa</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Zakończenie -->
+
+    <!-- Tabela Przegranych -->
+    <h2 style="text-align: center">Tabela Przegranych</h2>
+    <!-- Rozpoczecie -->
+    <div class="tournament-container">
+      <div class="tournament-headers">
+        <h3>1/8 Rozgrywek</h3>
+        <h3>Ćwierćfinał</h3>
+        <h3>Półfinał</h3>
+        <h3>Final</h3>
+        <h3>Zwycięsca</h3>
+      </div>
+
+      <div class="tournament-brackets">
+        <ul class="bracket bracket-1">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-2">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-3">
+          <li class="team-item">Klasa</li>
+          <li class="team-item">Klasa</li>
+        </ul>
+        <ul class="bracket bracket-4">
+          <li class="team-item">Klasa</li>
+        </ul>
+
+        <ul class="bracket bracket-5">
+          <li class="team-item">Klasa</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Zakończenie -->
+
+
+    <!-- Stopka strony -->
+    <footer>
+      <br />
+      <br />
+      <p>TEKST STOPKI</p>
+    </footer>
   </body>
 </html>
