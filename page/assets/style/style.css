@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans+Narrow&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+}
+
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 100;
+  background-color: #00010d;
+}
+
+
+.loginPanel:not(.exclude) {
+  color: white;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginPanel > label{
+  margin: auto;
+  width: 75%;
+}
+
+.loginPanel ,input[type="text"] , input[type="password"]{
+  width: 70%;
+  margin: auto;
+}
+
+.loginPanel input[type="file"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; /* Szerokość przycisku */
+  padding: 20px;
+  border-radius: 25px;
+  text-align: center; /* Wycentrowanie tekstu */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.loginPanel input[type="file"]::-webkit-file-upload-button {
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+
+.loginPanel input[type="file"]::-webkit-file-upload-button:hover {
+  transition-duration: 0.5s;
+  background-color: gray;
+  border-radius: 20px;
+}
+
+
+
+.loginPanel > button{
+  padding: 10px;
+  padding-inline: 70px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.loginPanel > button:hover{
+  transition-duration: 0.5s;
+  background-color: gray;
+  border-radius: 25px;
+}
+
+.loginPanel > h1{
+  text-align: center;
+}
+
+
+.userCreation{
+  margin: auto;
+  margin-top: 10vh;
+  width: 30%;
+  color: white;
+}
+
+
+.userCreation,  input[type="text"], input[type="password"]{
+  padding: 15px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  box-shadow: 2px 2px 2px black;
+}
+
+.userCreation, button{
+  padding: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.userCreation button:hover{
+  background-color: gray;
+  border-radius: 25px;
+  transition-duration: 0.5s;
+}
+
+
+
+.userCreation > credentials{
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.baner {
+  h1 {
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+    font-size: 64px;
+  }
+}
+
+.element {
+  display: inline-block;
+  margin-left: 250px;
+  margin-right: 250px;
+
+  text-shadow: 1px 1px 4px black;
+}
+
+footer {
+  background-color: #626973;
+  width: 100%;
+  height: 70px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+main {
+  width: 70%;
+  clear: both;
+  margin: auto;
+}

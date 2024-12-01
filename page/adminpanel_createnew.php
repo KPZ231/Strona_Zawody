@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="scripts/login_backend.js"></script>
-    <title>Logowanie</title>
+    <title></title>
 </head>
 <body>
     
-<script src="scripts/login_front.js"></script>
-
 </body>
 </html>
