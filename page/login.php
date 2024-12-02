@@ -42,6 +42,38 @@
       <input type="submit" value="Zaloguj" name="submit">
     </form>
 
+    <?php
+    session_start();
+    include('./include/conn.php');
+
+    function Login($login)
+    {
+      $_SESSION['isLogged'] = true;
+      $_SESSION['logedAs'] = $login;
+    }
+
+    if (isset($_POST['submit'])) {
+      $login = filter_input(INPUT_POST, 'login', FILTER_SANITIZE_STRING);
+      $password = $_POST['password'];
+
+      // Prepare statement
+      $stmt = $conn->prepare("SELECT _password FROM uzytkowicy_administracyjni WHERE _login = ?");
+      $stmt->bind_param("s", $login);
+      $stmt->execute();
+      $result = $stmt->get_result();
+
+      // Check if user exists and verify password
+      $row = $result->fetch_assoc();
+      if ($row && password_verify($password, $row['_password'])) {
+        Login($login);
+      } else {
+        echo "Dane Logowania Są Niepoprawne";
+      }
+
+      $stmt->close();
+    }
+    ?>
+
     <script>
       function myFunction() {
         var x = document.getElementById("password");

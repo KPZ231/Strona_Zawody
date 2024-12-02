@@ -27,7 +27,7 @@
       <div class="credentials">
         <form action="create_user.php" method="post"><label for="login">Login: </label>
           <br />
-          <input type="text" id="login" placeholder="Login..." name="login" oninput="checkPassword()"/>
+          <input type="text" id="login" placeholder="Login..." name="login" oninput="checkPassword()" />
           <br />
           <br />
           <label for="password">Hasło: </label>
@@ -76,9 +76,7 @@
     }
     ?>
 
-    <script>
-
-
+<script>
       // Pobieranie elementów z DOM
       let error_text = document.getElementById("error_text");
       let submit = document.getElementById("submit");
