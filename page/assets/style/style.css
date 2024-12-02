@@ -12,7 +12,7 @@ body {
 }
 
 
-.loginPanel:not(.exclude) {
+/* .loginPanel {
   color: white;
   width: 30%;
   position: absolute;
@@ -38,10 +38,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; /* Szerokość przycisku */
+  width: 50%; 
   padding: 20px;
   border-radius: 25px;
-  text-align: center; /* Wycentrowanie tekstu */
+  text-align: center; 
   color: white;
   border: none;
   cursor: pointer;
@@ -77,7 +77,7 @@ body {
 
 .loginPanel > h1{
   text-align: center;
-}
+} */
 
 
 .userCreation{
@@ -95,7 +95,7 @@ body {
   box-shadow: 2px 2px 2px black;
 }
 
-.userCreation, button{
+.userCreation, input[type="submit"]{
   padding: 10px;
   padding-right: 50px;
   padding-left: 50px;

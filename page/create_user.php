@@ -25,14 +25,15 @@
       <hr />
       <br />
       <div class="credentials">
-        <form action="create_user.php" method="post"><label for="login">Login: </label>
+        <form action="create_user.php" method="post">
+          <label for="login">Login: </label>
           <br />
           <input type="text" id="login" placeholder="Login..." name="login" oninput="checkPassword()" />
           <br />
           <br />
           <label for="password">Hasło: </label>
           <br />
-          <input type="password" id="password" placeholder="Hasło..." required name="passsword" oninput="checkPassword()" />
+          <input type="password" id="password" placeholder="Hasło..." name="password" required oninput="checkPassword()" />
           <input type="checkbox" onclick="myFunction()"> Pokaż Hasło
           <br>
           <p id="error_text"></p>
@@ -52,31 +53,7 @@
       </div>
     </div>
 
-    <?php
-
-    include('./include/conn.php');
-
-
-    if (isset($_POST['submit'])) {
-      $login = $_POST['login'];
-      $password = $_POST['password'];
-
-      // Sprawdzanie, czy użytkownik o takim loginie już istnieje
-      $search = mysqli_query($conn, "SELECT _login FROM uzytkownicy_administracyjni WHERE _login = '$login'");
-      if (mysqli_fetch_row($search) == NULL) {
-        // Jeśli nie istnieje, tworzymy hasz
-        $hash = password_hash($password, PASSWORD_BCRYPT);
-
-        // Dodawanie nowego użytkownika do bazy
-        $queryText = "INSERT INTO uzytkownicy_administracyjni(_login, _password) VALUES('$login', '$hash')";
-        $query = mysqli_query($conn, $queryText);
-      } else {
-        echo "Uzytkownik w bazie o takim loginie juz istnieje";
-      }
-    }
-    ?>
-
-<script>
+    <script>
       // Pobieranie elementów z DOM
       let error_text = document.getElementById("error_text");
       let submit = document.getElementById("submit");
@@ -120,6 +97,48 @@
         }
       }
     </script>
+
+
+    <?php
+    include './include/conn.php';
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+      $login = $_POST['login'];
+      $password = $_POST['password'];
+
+      // Sprawdzenie, czy użytkownik o podanym loginie już istnieje
+      $query = $conn->prepare("SELECT COUNT(*) FROM uzytkownicy_administracyjni WHERE _login = ?");
+      $query->bind_param('s', $login);
+      $query->execute();
+      $query->bind_result($count);
+      $query->fetch();
+      $query->close();
+
+      if ($count > 0) {
+        die('Użytkownik o takim loginie już istnieje.');
+      }
+
+      // Hashowanie hasła
+      $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+      // Dodanie użytkownika do bazy danych
+      $insert = $conn->prepare("INSERT INTO uzytkownicy_administracyjni (_login, _password) VALUES (?, ?)");
+      $insert->bind_param('ss', $login, $hashedPassword);
+      if ($insert->execute()) {
+        echo '<p style="text-align:center;">Rejstracja Zakończona Sukcesem</p>';
+      } else {
+        echo '<p style="text-align:center;">Wystąpił Błąd</p>';
+      }
+      $insert->close();
+    }
+
+    $conn->close();
+    ?>
+
+
+
+
+
 
 
   </body>
