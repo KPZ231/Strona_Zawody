@@ -42,10 +42,6 @@
       <input type="submit" value="Zaloguj" name="submit">
     </form>
 
-    <?php
-    include("./php/login.php");
-    ?>
-
     <script>
       function myFunction() {
         var x = document.getElementById("password");
