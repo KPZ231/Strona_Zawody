@@ -12,74 +12,6 @@ body {
 }
 
 
-/* .loginPanel {
-  color: white;
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.loginPanel > label{
-  margin: auto;
-  width: 75%;
-}
-
-.loginPanel ,input[type="text"] , input[type="password"]{
-  width: 70%;
-  margin: auto;
-}
-
-.loginPanel input[type="file"] {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%; 
-  padding: 20px;
-  border-radius: 25px;
-  text-align: center; 
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.loginPanel input[type="file"]::-webkit-file-upload-button {
-  padding: 10px;
-  padding-inline: 20px;
-  border-radius: 15px;
-  transition-duration: 0.5s;
-}
-
-.loginPanel input[type="file"]::-webkit-file-upload-button:hover {
-  transition-duration: 0.5s;
-  background-color: gray;
-  border-radius: 20px;
-}
-
-
-
-.loginPanel > button{
-  padding: 10px;
-  padding-inline: 70px;
-  border-radius: 10px;
-  transition-duration: 0.5s;
-}
-
-.loginPanel > button:hover{
-  transition-duration: 0.5s;
-  background-color: gray;
-  border-radius: 25px;
-}
-
-.loginPanel > h1{
-  text-align: center;
-} */
-
-
 .userCreation{
   margin: auto;
   margin-top: 10vh;
@@ -103,7 +35,7 @@ body {
   transition-duration: 0.5s;
 }
 
-.userCreation button:hover{
+.userCreation > button:hover{
   background-color: gray;
   border-radius: 25px;
   transition-duration: 0.5s;
@@ -155,4 +87,41 @@ main {
   width: 70%;
   clear: both;
   margin: auto;
+}
+
+.adminpanel_glowny{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.adminpanel_glowny > button{
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-inline: 70px;
+  border-radius: 10px;
+  background-color: rgb(30, 26, 56);
+  overflow: hidden;
+  text-decoration: none;
+  border: none;
+  color: white;
+  font-size: x-large;
+  padding-inline: 50px;
+  transition-duration: 0.5s;
+}
+
+.adminpanel_glowny > button:hover{
+  transition-duration: 0.5s;
+  background-color: rgb(60, 52, 109);
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.adminpanel_glowny > h2{
+  text-align: center;
+  font-style: italic;
+  font-weight: 100;
+  font-size: xx-large;
+  margin-top: -30vh;
 }
