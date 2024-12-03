@@ -4,30 +4,30 @@
   margin: 0;
 }
 
-
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 100;
   background-color: #00010d;
 }
 
-
-.userCreation{
+.userCreation {
   margin: auto;
   margin-top: 10vh;
   width: 30%;
   color: white;
 }
 
-
-.userCreation,  input[type="text"], input[type="password"]{
+.userCreation,
+input[type="text"],
+input[type="password"] {
   padding: 15px;
   border-radius: 10px;
   text-transform: capitalize;
   box-shadow: 2px 2px 2px black;
 }
 
-.userCreation, input[type="submit"]{
+
+input[type="submit"], input[type="button"] {
   padding: 10px;
   padding-right: 50px;
   padding-left: 50px;
@@ -35,15 +35,13 @@ body {
   transition-duration: 0.5s;
 }
 
-.userCreation > button:hover{
+input[type="submit"]:hover , input[type="button"]:hover{
   background-color: gray;
   border-radius: 25px;
   transition-duration: 0.5s;
 }
 
-
-
-.userCreation > credentials{
+.userCreation > credentials {
   margin: auto;
 }
 
@@ -89,14 +87,14 @@ main {
   margin: auto;
 }
 
-.adminpanel_glowny{
+.adminpanel_glowny {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.adminpanel_glowny > button{
+.adminpanel_glowny > button {
   padding: 20px;
   font-family: "Roboto Condensed", sans-serif;
   margin-inline: 70px;
@@ -111,17 +109,62 @@ main {
   transition-duration: 0.5s;
 }
 
-.adminpanel_glowny > button:hover{
+.adminpanel_glowny > button:hover {
   transition-duration: 0.5s;
   background-color: rgb(60, 52, 109);
   cursor: pointer;
   border-radius: 25px;
 }
 
-.adminpanel_glowny > h2{
+.adminpanel_glowny > h2 {
   text-align: center;
   font-style: italic;
   font-weight: 100;
   font-size: xx-large;
   margin-top: -30vh;
+}
+
+.tworzenieRozgrywekContainer {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -45%);
+  color: white;
+  width: 50%;
+  margin: auto;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Dzieli przestrzeń między sekcjami */
+  align-items: flex-start; /* Wyrównanie do góry */
+}
+
+.tworzenieRozgrywekContainer > form {
+  width: 100%; /* Formularz zajmuje 60% szerokości kontenera */
+  display: flex;
+  flex-direction: column; /* Ustaw elementy w kolumnie */
+  gap: 10px; /* Odstęp między elementami w kolumnie */
+}
+
+.tworzenieRozgrywekContainer > form label {
+  margin-bottom: 8px; /* Mały odstęp między labelem a inputem */
+  font-size: 16px;
+}
+
+.tworzenieRozgrywekContainer > form input,
+.tworzenieRozgrywekContainer > form select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.klasy {
+  color: black;
+  width: 30%; /* Sekcja na klasy zajmuje 30% szerokości kontenera */
+  height: auto; /* Dopasowanie wysokości do zawartości */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
