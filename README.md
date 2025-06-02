@@ -1,80 +1,78 @@
-Competitions Website
+# Competitions Website
+
 A web application for managing sports competitions and organizing sporting events.
 
-📋 Project Description
+## 📋 Project Description
+
 The Competitions Website is a system designed to facilitate the organization, management, and tracking of sports competitions. The application allows for participant registration, competition category management, result presentation, and sports event administration.
 
-✨ Features
-Competition Management: Create and edit sports events
+## ✨ Features
 
-Participant Registration: Registration system for athletes
+* **Competition Management**: Create and edit sports events
+* **Participant Registration**: Registration system for athletes
+* **Competition Categories**: Division into various age groups and skill levels
+* **Results**: Real-time result presentation
+* **Admin Panel**: Manage users and competitions
+* **Responsive Design**: Mobile-friendly interface
 
-Competition Categories: Division into various age groups and skill levels
+## 🛠️ Technologies
 
-Results: Real-time result presentation
+* **Frontend**: HTML5, CSS3, JavaScript
+* **Backend**: PHP
+* **Database**: MySQL
 
-Admin Panel: Manage users and competitions
+## 🎯 Usage
 
-Responsive Design: Mobile-friendly interface
+### For Organizers
 
-🛠️ Technologies
-Frontend: HTML5, CSS3, JavaScript
+1. Log in to the admin panel
+2. Create a new competition
+3. Add categories and settings
+4. Manage participant registrations
 
-Backend: PHP
+### For Participants
 
-Database: MySQL
+1. Register on the website
+2. Browse available competitions
+3. Sign up for a competition
+4. Follow real-time results
 
-🎯 Usage
-For Organizers
-Log in to the admin panel
+## 🤝 Contribution
 
-Create a new competition
+1. Fork the repository
+2. Create a branch for a new feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Add categories and settings
+## 🐛 Known Issues
 
-Manage participant registrations
+* \[List of known bugs and limitations]
 
-For Participants
-Register on the website
+## 📄 License
 
-Browse available competitions
+This project is licensed under the \[MIT/GPL/Apache] License – see the [LICENSE](LICENSE) file for details.
 
-Sign up for a competition
+## 👨‍💻 Author
 
-Follow real-time results
+**KPZ231**
 
-🤝 Contribution
-Fork the repository
+* GitHub: [@KPZ231](https://github.com/KPZ231)
 
-Create a branch for a new feature (git checkout -b feature/AmazingFeature)
+## 🙏 Acknowledgements
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+* \[People/organizations you'd like to thank]
+* \[Open source libraries used]
 
-Push to the branch (git push origin feature/AmazingFeature)
+---
 
-Open a Pull Request
+## 📞 Contact
 
-🐛 Known Issues
-[List of known bugs and limitations]
-
-📄 License
-This project is licensed under the [MIT/GPL/Apache] License – see the LICENSE file for details.
-
-👨‍💻 Author
-KPZ231
-
-GitHub: @KPZ231
-
-🙏 Acknowledgements
-[People/organizations you'd like to thank]
-
-[Open source libraries used]
-
-📞 Contact
 If you have any questions or suggestions, feel free to reach out via:
 
-GitHub Issues
+* GitHub Issues
+* Email: \[[your-email@example.com](mailto:your-email@example.com)]
 
-Email: [your-email@example.com]
+---
 
-⭐ If you like the project, leave a star! ⭐
+⭐ **If you like the project, leave a star!** ⭐
