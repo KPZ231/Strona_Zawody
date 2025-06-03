@@ -44,11 +44,7 @@ The Competitions Website is a system designed to facilitate the organization, ma
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 🐛 Known Issues
-
-* \[List of known bugs and limitations]
-
+6. 
 ## 📄 License
 
 This project is licensed under the \[MIT/GPL/Apache] License – see the [LICENSE](LICENSE) file for details.
@@ -71,7 +67,7 @@ This project is licensed under the \[MIT/GPL/Apache] License – see the [LICENS
 If you have any questions or suggestions, feel free to reach out via:
 
 * GitHub Issues
-* Email: \[[your-email@example.com](mailto:your-email@example.com)]
+* Email: \[[kapieksperimental@gmail.com](mailto:kapieksperimental@gmail.com)]
 
 ---
 
